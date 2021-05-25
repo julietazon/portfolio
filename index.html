@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Julie Bozon | Home</title>
+    <meta
+      name="description"
+      content="Front-end developer and tech assistant at SheCodes based in Brazil"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font-awesome icon -->
+    <script
+      src="https://kit.fontawesome.com/85440b5acd.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font fira code -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="/src/styles.css" />
+    <!-- js -->
+    <script src="/src/index.js" defer></script>
+  </head>
+  <body
+    class="home"
+    data-spy="scroll"
+    data-target="#scroll-typing"
+    data-offset="0"
+    id="typing"
+  >
+    <navigation-component></navigation-component>
+    <div class="row presentation">
+      <div>
+        <h1
+          class="typewrite"
+          data-period="2000"
+          content="I am Julie, a Tech Assistant based in Brazil! I Love coding."
+          data-type='[ "Hey there, I am Julie", "I am a Tech Assistant based in Brazil!", "I Love coding." ]'
+        >
+          <span class="wrap"></span>
+        </h1>
+      </div>
+    </div>
+    <a
+      type="button"
+      class="btn btn-light hey"
+      href="#about"
+      id="scroll-about"
+      title="more about"
+      >Hey!</a
+    >
+    <div
+      data-spy="scroll"
+      data-target="#scroll-about"
+      data-offset="0"
+      aria-hidden="true"
+    >
+      <div class="container-fluid about" id="about">
+        <div class="row m-2 mt-5 bg-danger">
+          <div class="col col-sm-6">
+            <div class="m-3 p-3 info bg-info">
+              <h2>Julie Bozon</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <div class="resume">
+              <a
+                target="_blank"
+                class="btn mb-3 blink"
+                title="download resume"
+                href="src/img/Resume.pdf"
+                download
+                >Download My Resume!</a
+              >
+            </div>
+          </div>
+          <div class="col col-sm-6">
+            <div class="row personal-img m-3 p-3 bg-warning">
+              <img
+                src="/img/photo_julie_round.png"
+                alt="julie's relaxed photo"
+                class="img-fluid"
+              />
+            </div>
+            <div class="m-3 mt-0 contact bg-success">
+              <a href="mailto:juubozon@gmail.com" class="text-center icon"
+                ><i class="fas fa-envelope"></i
+              ></a>
+
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/julie-b-31918a18a/"
+                class="text-center icon"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a class="mx-auto d-block logo" href="#typing" id="scroll-typing"
+            ><img src="/img/logo_w.png" alt="julie's logo" width="50"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
