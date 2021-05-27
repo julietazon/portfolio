@@ -42,11 +42,12 @@ h1 {
 }
 
 .project .card {
-  display: flex;
   border: transparent;
   flex-wrap: nowrap;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
+  min-width: 18rem;
+  max-width: 40rem;
 }
 
 .project .card button {
@@ -174,4 +175,16 @@ html,
 
 .home .about .logo {
   padding: 50px;
+}
+
+@media (max-width: 600px) {
+  .profile {
+    order: 4;
+  }
+  .info {
+    order: 6;
+  }
+  .resume {
+    order: 7;
+  }
 }
