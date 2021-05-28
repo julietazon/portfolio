@@ -15,9 +15,9 @@ body {
 }
 
 .about .personal-img {
-  -webkit-display: block;
   display: flex;
-  /*-webkit-flex-direction: column;*/
+  display: -webkit-flex !important;
+  -webkit-flex-direction: column;
   -webkit-justify-content: center;
   justify-content: center;
   -webkit-vertical-align: middle;
@@ -29,9 +29,6 @@ body {
   max-width: 300px;
   min-width: 200px;
   height: auto;
-  -webkit-max-width: 300px;
-  -webkit-min-width: 200px;
-  -webkit-height: auto;
 }
 
 .about .icon {
@@ -43,7 +40,7 @@ body {
 .about .contact {
   -webkit-justify-content: center;
   justify-content: center;
-  -webkit-display: flex;
+  display: -webkit-flex;
   display: flex;
 }
 
