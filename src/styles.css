@@ -36,6 +36,11 @@ body {
   display: flex;
 }
 
+.profile-photo {
+  display: flex;
+  max-width: 300px;
+}
+
 .project .title {
   margin-top: 120px;
   text-align: center;
