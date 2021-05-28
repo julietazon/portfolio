@@ -22,7 +22,9 @@ body {
 
 .about .personal-img img {
   filter: grayscale(100%);
-  flex: 0 0 25%;
+  display: block;
+  max-width: 50%;
+  height: auto;
 }
 
 .about .icon {
