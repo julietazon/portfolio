@@ -41,7 +41,9 @@ body {
 }
 
 .about .contact {
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-display: flex;
   display: flex;
 }
 
