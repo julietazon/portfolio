@@ -15,12 +15,14 @@ body {
 }
 
 .about .personal-img {
+  display: flex;
   justify-content: center;
   vertical-align: middle;
 }
 
 .about .personal-img img {
   filter: grayscale(100%);
+  display: block;
   max-width: 300px;
   min-width: 200px;
 }
@@ -34,11 +36,6 @@ body {
 .about .contact {
   justify-content: center;
   display: flex;
-}
-
-.profile-photo {
-  display: flex;
-  max-width: 300px;
 }
 
 .project .title {
