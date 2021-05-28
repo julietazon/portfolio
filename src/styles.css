@@ -16,15 +16,15 @@ body {
 
 .about .personal-img {
   display: flex;
+  display: -webkit-flex;
   justify-content: center;
   vertical-align: middle;
 }
 
 .about .personal-img img {
   filter: grayscale(100%);
-  display: block;
-  max-width: 50%;
-  height: auto;
+  max-width: 300px;
+  min-width: 200px;
 }
 
 .about .icon {
