@@ -17,6 +17,8 @@ body {
 .about .personal-img {
   display: flex;
   display: -webkit-flex !important;
+  object-fit: contain;
+  -webkit-align-items: center;
   -webkit-flex-direction: column;
   -webkit-justify-content: center;
   justify-content: center;
