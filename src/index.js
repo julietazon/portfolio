@@ -105,7 +105,7 @@ class Navigation extends HTMLElement {
       </style>
       <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html"
+          <a class="navbar-brand" href="/"
             ><img src="/img/logo_w.png" alt="julie's logo" class="logo" width="50"
           /></a>
           <button
