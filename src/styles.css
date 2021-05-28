@@ -15,7 +15,7 @@ body {
 }
 
 .about .personal-img {
-  -webkit-display: flex;
+  -webkit-display: block;
   display: flex;
   /*-webkit-flex-direction: column;*/
   -webkit-justify-content: center;
