@@ -28,6 +28,10 @@ body {
   filter: grayscale(100%);
   max-width: 300px;
   min-width: 200px;
+  height: auto;
+  -webkit-max-width: 300px;
+  -webkit-min-width: 200px;
+  -webkit-height: auto;
 }
 
 .about .icon {
