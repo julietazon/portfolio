@@ -136,3 +136,43 @@ class Navigation extends HTMLElement {
 }
 
 customElements.define("navigation-component", Navigation);
+
+/* Theme change 1 */
+const themeSwitch = document.querySelector(".form-check-input");
+
+themeSwitch.addEventListener("change", () => {
+  document.body.classList.toggle("light-theme");
+  localStorage.setItem("theme", "light-theme");
+});
+
+/* Theme change 2 */
+/*
+const themeSwitcher = document.querySelector(".form-check-input");
+
+themeSwitcher.checked = false;
+function clickHandler() {
+  if (this.checked) {
+    document.body.classList.add("light-theme");
+    document.body.classList.remove("dark-theme");
+    localStorage.setItem("theme", "light-theme");
+  } else {
+    document.body.classList.remove("light-theme");
+    document.body.classList.add("dark-theme");
+    localStorage.setItem("theme", "dark-theme");
+  }
+}
+
+themeSwitcher.addEventListener("click", clickHandler);
+
+window.onload = checkTheme();
+function checkTheme() {
+  const localStorageTheme = localStorage.getItem("theme");
+
+  if (localStorageTheme !== null && localStorageTheme === "dark") {
+    document.body.className = localStorageTheme;
+
+    const themeSwitch = document.querySelector(".form-check-input");
+    themeSwitch.checked = true;
+  }
+}
+*/

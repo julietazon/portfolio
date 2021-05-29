@@ -1,5 +1,7 @@
 :root {
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --black: black;
+  --white: white;
 }
 
 body {
@@ -7,11 +9,16 @@ body {
 }
 
 .typewrite {
+  color: var(--header-color);
   font-size: 50px;
 }
 
 .btn {
   box-shadow: var(--box-shadow);
+}
+
+.about {
+  color: var(--font-color);
 }
 
 .about .personal-img {
@@ -34,7 +41,7 @@ body {
 }
 
 .about .icon {
-  color: rgb(255, 255, 255);
+  color: var(--icon-color);
   margin: 10px;
   font-size: 25px;
 }
@@ -46,8 +53,13 @@ body {
   display: flex;
 }
 
+.project {
+  background: var(--background);
+}
+
 .project .title {
-  margin-top: 120px;
+  color: var(--header-color);
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -71,6 +83,10 @@ body {
   transition: 0.5s ease-in-out;
   border-radius: 10px;
   backface-visibility: hidden;
+}
+
+.project .more {
+  background: black;
 }
 
 .project .site {
@@ -113,7 +129,7 @@ html,
 }
 
 .home {
-  background: black;
+  background: var(--background);
 }
 
 .home .presentation {
@@ -129,12 +145,15 @@ html,
 }
 
 .home .typewrite {
-  color: white;
+  color: var(--header-color);
   font-weight: bolder;
   text-decoration: none;
 }
 
 .home .hey {
+  background: var(--button-bg);
+  border: var(--button-bg);
+  color: var(--button-color);
   position: absolute;
   bottom: 50px;
   left: 50%;
@@ -200,4 +219,28 @@ html,
   .typewrite {
     font-size: 30px;
   }
+}
+
+.form-switch {
+  position: absolute;
+  top: 80px;
+  right: 50px;
+}
+
+.dark-theme {
+  --background: var(--black);
+  --header-color: var(--white);
+  --button-bg: var(--white);
+  --button-color: var(--black);
+  --font-color: var(--white);
+  --icon-color: var(--white);
+}
+
+.light-theme {
+  --background: var(--white);
+  --header-color: var(--black);
+  --button-bg: var(--black);
+  --button-color: var(--white);
+  --font-color: var(--black);
+  --icon-color: var(--black);
 }
