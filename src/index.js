@@ -137,42 +137,68 @@ class Navigation extends HTMLElement {
 
 customElements.define("navigation-component", Navigation);
 
-/* Theme change 1 */
-const themeSwitch = document.querySelector(".form-check-input");
+/* Theme change */
+/*
+let theme = localStorage.getItem("data-theme");
 
-themeSwitch.addEventListener("change", () => {
-  document.body.classList.toggle("light-theme");
-  localStorage.setItem("theme", "light-theme");
+const changeThemeToDark = () => {
+  document.documentElement.setAttribute("data-theme", "dark"); // set theme to dark
+  localStorage.setItem("data-theme", "dark"); // save theme to local storage
+};
+const changeThemeToLight = () => {
+  document.documentElement.setAttribute("data-theme", "light"); // set theme light
+  localStorage.setItem("data-theme", "light"); // save theme to local storage
+};
+
+// Get the element based on ID
+const checkbox = document.getElementById("flexSwitchCheckChecked");
+// Apply retrived theme to the website
+checkbox.addEventListener("change", () => {
+  let theme = localStorage.getItem("data-theme"); // Retrieve saved theme from local storage
+  if (theme === "light") {
+    changeThemeToDark();
+  } else {
+    changeThemeToLight();
+  }
 });
+*/
 
 /* Theme change 2 */
-/*
-const themeSwitcher = document.querySelector(".form-check-input");
-
-themeSwitcher.checked = false;
-function clickHandler() {
-  if (this.checked) {
-    document.body.classList.add("light-theme");
-    document.body.classList.remove("dark-theme");
-    localStorage.setItem("theme", "light-theme");
+// Get the theme toggle input
+const themeToggle = document.querySelector("#flexSwitchCheckChecked");
+// Function that will switch the theme based on the if the theme toggle is checked or not
+function switchTheme(theme) {
+  if (theme.target.checked) {
+    document.documentElement.setAttribute("data-theme", "light");
   } else {
-    document.body.classList.remove("light-theme");
-    document.body.classList.add("dark-theme");
-    localStorage.setItem("theme", "dark-theme");
+    document.documentElement.setAttribute("data-theme", "dark");
+  }
+}
+// Add an event listener to the theme toggle, which will switch the theme
+themeToggle.addEventListener("change", switchTheme, false);
+
+function switchTheme(theme) {
+  if (theme.target.checked) {
+    document.documentElement.setAttribute("data-theme", "light");
+
+    // Set the user's theme preference to light
+    localStorage.setItem("theme", "light");
+  } else {
+    document.documentElement.setAttribute("data-theme", "dark");
+
+    // Set the user's theme preference to dark
+    localStorage.setItem("theme", "dark");
   }
 }
 
-themeSwitcher.addEventListener("click", clickHandler);
-
-window.onload = checkTheme();
-function checkTheme() {
-  const localStorageTheme = localStorage.getItem("theme");
-
-  if (localStorageTheme !== null && localStorageTheme === "dark") {
-    document.body.className = localStorageTheme;
-
-    const themeSwitch = document.querySelector(".form-check-input");
-    themeSwitch.checked = true;
+// Get the current theme from local storage
+const currentTheme = localStorage.getItem("theme");
+// If the current local storage item can be found
+if (currentTheme) {
+  // Set the body data-theme attribute to match the local storage item
+  document.documentElement.setAttribute("data-theme", currentTheme);
+  // If the current theme is dark, check the theme toggle
+  if (currentTheme === "light") {
+    themeToggle.checked = true;
   }
 }
-*/

@@ -227,7 +227,7 @@ html,
   right: 50px;
 }
 
-.dark-theme {
+html[data-theme="dark"] {
   --background: var(--black);
   --header-color: var(--white);
   --button-bg: var(--white);
@@ -236,7 +236,7 @@ html,
   --icon-color: var(--white);
 }
 
-.light-theme {
+html[data-theme="light"] {
   --background: var(--white);
   --header-color: var(--black);
   --button-bg: var(--black);
