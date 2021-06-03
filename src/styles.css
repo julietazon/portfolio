@@ -173,6 +173,9 @@ html,
   text-align: center;
 }
 
+.home .profile {
+}
+
 .blink {
   animation: blink 2s steps(1, end) infinite;
 }
