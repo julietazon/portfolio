@@ -15,6 +15,12 @@ html,
   height: 100%;
 }
 
+.form-switch {
+  position: absolute;
+  top: 80px;
+  right: 50px;
+}
+
 .typewrite {
   color: var(--header-color);
   font-size: 50px;
@@ -176,6 +182,22 @@ html,
 .home .profile {
 }
 
+.home .resume .btn {
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  font-weight: normal;
+}
+
+.home .resume .btn:hover {
+  animation: none;
+}
+
+.home .about .logo {
+  padding: 50px;
+}
+
 .blink {
   animation: blink 2s steps(1, end) infinite;
 }
@@ -193,22 +215,6 @@ html,
   }
 }
 
-.home .resume .btn {
-  color: black;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: white;
-  font-weight: normal;
-}
-
-.home .resume .btn:hover {
-  animation: none;
-}
-
-.home .about .logo {
-  padding: 50px;
-}
-
 @media (max-width: 600px) {
   .profile {
     order: 4;
@@ -222,12 +228,6 @@ html,
   .typewrite {
     font-size: 30px;
   }
-}
-
-.form-switch {
-  position: absolute;
-  top: 80px;
-  right: 50px;
 }
 
 html[data-theme="dark"] {
