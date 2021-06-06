@@ -8,6 +8,13 @@ body {
   font-family: "Fira Code", monospace;
 }
 
+html,
+.home,
+.presentation {
+  width: 100%;
+  height: 100%;
+}
+
 .typewrite {
   color: var(--header-color);
   font-size: 50px;
@@ -119,13 +126,6 @@ body {
 .project .modal-footer {
   border: transparent;
   background: black;
-}
-
-html,
-.home,
-.presentation {
-  width: 100%;
-  height: 100%;
 }
 
 .home {
