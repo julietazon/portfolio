@@ -202,3 +202,5 @@ if (currentTheme) {
     themeToggle.checked = true;
   }
 }
+
+/* Language */
